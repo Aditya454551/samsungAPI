@@ -17,7 +17,7 @@ app.listen(port, async () => {
     try {
         console.log("env",process.env.DB_URL)
         await mongoose.connect(`${process.env.DB_URL}`);
-        console.log(`Server is running on port ${port}`);
+        console.log(`Server running on port ${port}`);
     } catch (err) {
         console.error("MongoDB connection error:", err);
     }
